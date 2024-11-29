@@ -23,4 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             aboutSection.classList.remove('visible');
         }
     });
+
+    // Scroll to top function 
+    window.scrollToTop = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
 });
