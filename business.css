@@ -3,7 +3,21 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
+}
+
+body,
+html {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* For Chrome, Safari and Opera */
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar {
